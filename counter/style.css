@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightseagreen;
+}
+
+.container {
+    text-align: center;
+    color: rgb(214, 203, 198);
+    background-color: rgb(107, 55, 81);
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #928bf3;
+    color: rgb(24, 21, 21);
+}
+
+button:hover {
+    background-color: #45a049;
+    color: #928bf3;
+}
