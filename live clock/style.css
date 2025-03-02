@@ -7,7 +7,7 @@
 }
 .container{
     width: 100%;
-    height: 200%;
+    height: 100vh;
     background-color:  aquamarine;
    display: flex;
    align-items: center;
@@ -34,7 +34,7 @@
 width: 100%;
 position: absolute;
 text-align: center;
-bottom: 15%;
+bottom: 25%;
 color: #fff;
 font-size: 10px;
 font-weight: 50;
