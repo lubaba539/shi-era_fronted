@@ -1,0 +1,15 @@
+body{
+    padding: 0%;
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+}
+.countharacters{
+    text-align: center;
+}
+p{
+    text-align: center;
+    color: black;
+}

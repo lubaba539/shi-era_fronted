@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAJJ AND UMRAH WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+    <a href="#Home ">Home</a>
+    <a href="#About">About</a>
+    <a href="#Hajj">Hajj</a>
+    <a href="#Umrah">Umrah</a>
+    <a href="#Contact us">Contact us</a>
+</nav>
+<section id="Home">
+<div class="images">
+    <img src="images/HAJJ AND UMRA PH.jpg" alt="">
+
+<div class="intro">
+    <h1>WELCOME TO HAJJ AND UMRAH PACKAGE</h1>
+    <p> Assalamu Alaikum! We’re thrilled to have you here.
+       Explore our resources and guidance for your Hajj and Umrah journeys. </P>
+ <P>
+    May your pilgrimage be blessed and fulfilling. 
+Start your journey with us today!</P>
+<P>
+Feel free to customize it with your website's name!
+Both HAJJ and UMRAH provide muslims with an opportunity for spirtual renewal, seeking forgivness, and fulfilling an important aspect of their faith.
+    </p>
+</div>
+</div>
+<div class="navigation"> 
+
+</section>
+    <main>
+        <section id="About">
+            <h1> HAJJ AND UMRAH TRAVELATION</h1>
+            <div class="about-hajj">
+                <img src="images/hajj and umrah back.jpg" alt="hajj picture">
+             <ul>
+            <li>HAJJ is required for all muslims with financial and physical means to do.</li>
+            <li>UMRAH, is considered a recommendation, not an obligation, by some branches of islam.</li>
+            <li>Muslims are called to undertake two journeys of faith at least once in their lives.</li>
+            </ul>
+            </div>
+            </section>
+        <section id="Hajj">
+            <h2>Hajj</h2>
+            <ul>
+                <li>HAJJ takes place during the same period each year-during the month os DHUL HIJJAH.</li>
+            </ul>
+           
+            <table>
+                <ul>
+                <tr>
+                    <th>Date</th>
+                    <th>Ritual</th>
+                </tr>
+                <tr>
+                    <td>8th Dhu al-Hijjah</td>
+                    <td>Ihram - Entering the state of purity.</td>
+                </tr>
+                <tr>
+                    <td>8th Dhu al-Hijjah</td>
+                    <td>Tawaf - Circling the Kaaba.</td>
+                </tr>
+                <tr>
+                    <td>9th Dhu al-Hijjah</td>
+                    <td>Standing at Arafat - Day of prayer.</td>
+                </tr>
+                <tr>
+                    <td>10th Dhu al-Hijjah</td>
+                    <td>Muzdalifah - Collecting pebbles.</td>
+                </tr>
+                <tr>
+                     <td>10th Dhu al-Hijjah</td>
+                    <td>Ramy al-Jamarat - Throwing stones.</td>
+                </tr>
+                <tr>
+                    <td>10th Dhu al-Hijjah</td>
+                    <td>Eid al-Adha - Festival of sacrifice.</td>
+                </tr>
+                <tr>
+                    <td>11th-13th Dhu al-Hijjah</td>
+                    <td>Ramy al-Jamarat - Continuing the stone throwing.</td>
+                </tr>
+            </ul>
+            </table>
+        </section> 
+        <section id="Umrah">
+            <h2>Umrah</h2>
+            <p>UMRAH, the lesser pilgrimage, can be performed at any time of the year, except the days of HAJJ.</p>
+             </ul>
+            <ul>
+                <li>Umrah is a voluntary pilgrimage that can be performed at any time of the year. Below are the key rituals:</li>
+                <ul>
+                <li><strong>Ihram:</strong> Entering the state of purity and wearing special garments.</li>
+                <li><strong>Tawaf:</strong> Circling the Kaaba seven times.</li>
+                <li><strong>Sa'i:</strong> Walking seven times between the hills of Safa and Marwah.</li>
+            </ul>
+            </section>
+        </div>
+        </div>
+        <h1>Hajj and Umrah Services</h1>
+<div class="services">
+    <div class="service-card">
+        <h3>HAJJ PACKAGES</h3>
+        <img src="images/hajj packages.jpg" alt="" class="service-image">
+        <div class="service-description">Explore our exclusive Hajj packages that offer comfortable accommodations and guided tours.</div>
+        <P>Affordable packages for acomfortable hajj experiance.include flights, hotels</P>
+        <a href="#" class="learn-more">Learn More</a>
+    </div>
+    <div class="service-card">
+        <h3>UMRAH PACKAGES</h3>
+        <img src="images/umrah p php.jpg" alt="Umrah Packages" class="service-image">
+        <div class="service-description">Choose from a variety of Umrah packages tailored to meet your needs and budget.</div>
+        <p>it can be performed independently, many muslims choose to undertake it alongside hajj or during their travels to mecca.</p>
+        <a href="#" class="learn-more">Learn More</a>
+    </div>
+    <div class="service-card">
+        <h3>TRAVEL INSURANCE</h3>
+        <img src="images/travel insurance.jpg" alt="Travel Insurance" class="service-image">
+        <div class="service-description">Secure your trip with our comprehensive travel insurance options for peace of mind.</div>
+        <P>Stay safe with coverage for medical needs, trip delays, and lost belongings.</P>
+        <a href="#" class="learn-more">Learn More</a>
+    </div>
+</div>
+<div class="booking-form-container">
+    <h4>Hajj and Umrah Booking Form</h4>
+    <form id="bookingForm" action="/submit-booking" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="contact">Contact Information:</label>
+        <input type="email" id="contact" name="contact" required>
+
+        <label for="travel-dates">Travel Dates:Starting and Ending respectively</label>
+        <input type="date" id="travel-start" name="travel_start" required>
+        <input type="date" id="travel-end" name="travel_end" required>
+
+        <label for="package-selection">Package Selection:</label>
+        <select id="package-selection" name="package_selection" required>
+            <option value="" disabled selected>Select a package</option>
+            <option value="basic">Basic Package</option>
+            <option value="standard">Standard Package</option>
+            <option value="premium">Premium Package</option>
+        </select>
+
+        <label for="special-requests">Special Requests:</label>
+        <textarea id="special-requests" name="special_requests" rows="4"></textarea>
+           <form id="contact-form">
+        <button type="submit">Submit</button>
+    </form>
+    </form>
+</div>
+<div class="testimonials-container">
+    <h2>What our travellers say</h2>
+<div class="testimonals-inside">
+    <div class="testimonial" id="testimonial1">
+        <img src="images/ICON1.jpg" alt="Traveler 1" class="testimonial-image">
+        <p class="traveler-message">“The experience was life-changing! The arrangements were perfect.”</p>
+        <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        <p class="traveler-name">MOHAMMED</p>
+    </div>
+    <div class="testimonial" id="testimonial2">
+        <img src="images/ICON2.jpg" alt="Traveler 2" class="testimonial-image">
+        <p class="traveler-message">“I felt so welcomed and cared for throughout the journey.”</p>
+        <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        <p class="traveler-name">ABDELLAH</p>
+    </div>
+    <div class="testimonial" id="testimonial3">
+        <img src="images/ICON3.jpg" alt="Traveler 3" class="testimonial-image">
+        <p class="traveler-message">“A wonderful experience! Highly recommend this service.”</p>
+        <div class="star-rating">⭐⭐⭐⭐⭐</div>
+        <p class="traveler-name">EMAN</p>
+    </div>
+</div>
+</div>
+<section id="Contact us">
+    <div class="footer">
+        <footer>
+            <p>Contact Us: Call|| Phone: +966 456 7890</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a> |
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://t.me/Bint_ya" target>TELEGRAM</a>
+            </div>
+            <p>&copy; 2023 Hajj and Umrah Services. All rights reserved.</p>
+        </footer>
+    </section>
+    </div>
+
+</body>
+</html>

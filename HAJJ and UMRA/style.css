@@ -1,0 +1,247 @@
+ body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #edeef305;
+            background-image: url('images/images 7.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
+        h1{
+            color: #7e0b57;
+            text-align: center;
+            text-decoration: dotted;
+        }
+         h2 {
+            color: #eee4e7
+        }
+        h3{
+            color: #033457;
+            text-align: center;
+            background-color: #ebd5d5;
+        }
+        h4{
+            color: #2c3e50;
+            background-color: #8a9c91;
+            text-align: center;
+            padding: 0%;
+        }
+        .images img{
+            position: relative;
+            width: 50vh;
+            height: 50vh;
+            padding: 30px;
+            margin-right: 30px;
+            border-radius: 70px;
+        }
+        .images{
+            display: grid;
+            grid-template-columns: auto auto;
+            margin: 50px 20px 100px 20px;
+        }
+        .intro{
+            margin: 80px 0;
+        }
+        nav{
+            text-align: center;
+            margin-left: 50px;
+            justify-content: space-between;
+    
+        }
+        nav a{
+            justify-content: space-around;
+            margin: 10px;
+            text-decoration: none;
+            color: rgb(240, 240, 243);
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 80px;
+
+
+        }
+        nav a:hover{
+            text-decoration: underline;
+            color: gold;
+            text-transform: capitalize;
+        
+
+        }
+        .table{
+            text-align: center;
+        }
+    
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .service-card {
+            background-color: #cfc3c3;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: calc(30% - 40px); /* Adjust width based on the number of cards */
+            box-sizing: border-box;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .service-image {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+        }
+        .service-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .service-description {
+            margin-bottom: 15px;
+        }
+        .learn-more {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #71aacf;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .learn-more:hover {
+            background-color: #2980b9;
+            color: #e7b2b2;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #d3e9e5fb;
+            text-align: center;
+            color: #1b1919;
+        }
+        .social-media {
+            margin-top: 10px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #2c3e50;
+        }
+        
+        @media (max-width: 768px) {
+            .service-card {
+                width: calc(45% - 40px); 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-card {
+                width: calc(100% - 40px);
+            }
+        }
+
+.booking-form-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(133, 61, 228, 0.932);
+}
+.navigation{
+    text-align: left;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a33f3f;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; 
+    
+}
+.testimonials-container{
+    width: 700px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #dbd8cf;
+    box-shadow: hsl(194, 92%, 50%);
+    border-radius: 20px;
+  
+    
+}
+.testimonals-inside{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+h5{
+    text-align: center;
+    padding: 1%;
+    color: #8a9c91;
+    display: block;
+}
+
+.testimonial {
+    margin: auto 10px;    
+}
+
+.testimonial-image {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 70%;
+    text-align: right;
+    position: relative;
+
+}
+
+.traveler-name {
+    font-weight: bold;
+    color: #a33f3f;
+    padding: 0 ;
+}
+
+.star-rating {
+    color: gold;
+}
+#About{
+    padding: 30PX;
+}
+#About img{
+    width: 70%;
+    height: 200PX;
+    border-radius: 30px;
+    box-shadow: 0 2px 20px rgb(83, 18, 236);
+    padding: 40PX;
+    top: 40PX;
+}
+.about-hajj{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
