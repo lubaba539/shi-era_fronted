@@ -1,26 +1,57 @@
-const apikey = "";
-const apiUrl="";
+const apiKey = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
 
+const searchBtn = document.getElementById('searchBtn');
+const cityInput = document.getElementById('cityInput');
+const weatherInfo = document.getElementById('weatherInfo');
+const cityName = document.getElementById('cityName');
+const temperature = document.getElementById('temperature');
+const condition = document.getElementById('condition');
+const humidity = document.getElementById('humidity');
+const errorDiv = document.getElementById('error');
 
-const searchBox = document.querySelector(".search input");
-const searchBtn = document.querySelector(".search button");
+searchBtn.addEventListener('click', () => {
+  const city = cityInput.value.trim();
 
-async function checkWeather(city) {
-    const response = await fetch(apiUrl + city +  `&appid=${apikey}`);
-    var data = await response.json();
+  if (city === "") {
+    showError('Please enter a city name.');
+    return;
+  }
 
-    console. log(data);
+  fetchWeather(city);
+});
 
-   
-    document.querySelector(".city").innerHTML = data.name;
-    document.querySelector(".temp").innerHTML = Math.around (data.main.temp) + "0c" ;
-    document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-    document.querySelector(".wind").innerHTML = data.main.wind.speed + "km/h";
+function fetchWeather(city) {
+  const url = https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric;
 
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('City not found');
+      }
+      return response.json();
+    })
+    .then(data => {
+      showWeather(data);
+    })
+    .catch(error => {
+      showError(error.message);
+    });
 }
-searchBtn.addEventListener("click", ()=>{
-    checkWeather(searchBox.value);
-})
 
+function showWeather(data) {
+  errorDiv.classList.add('hidden');
+  weatherInfo.classList.remove('hidden');
+
+  cityName.textContent = ${data.name}, ${data.sys.country};
+  temperature.textContent = Temperature: ${data.main.temp}°C;
+  condition.textContent = Condition: ${data.weather[0].description};
+  humidity.textContent = Humidity: ${data.main.humidity}%;
+}
+
+function showError(message) {
+  weatherInfo.classList.add('hidden');
+  errorDiv.classList.remove('hidden');
+  errorDiv.textContent = message;
+}
 
 
