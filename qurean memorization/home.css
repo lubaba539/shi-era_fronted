@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #e0ecf4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+body.dark-mode {
+  background: #121212;
+  color: rgb(90, 18, 18);
+}
+
+.page {
+  display: none;
+  padding: 30px;
+  text-align: center;
+}
+
+.page.active {
+  display: block;
+}
+
+.home-background {
+  background-image: url('images/image.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#quran, #challenge, #progress, #settings {
+  max-width: 600px;
+  height: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #0a9396;
+  border-radius: 26px;
+  box-shadow: 0 0 20px rgba(11, 222, 250, 0.952);
+  text-align: center;
+}
+h2{
+  color: #0c0606;
+}
+.controls{
+  color: #121212;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 16px;
+  border: none;
+  background-color: #007B83;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: gold;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+/* Nav menu styles */
+#nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 16px;
+  background-color: #007B83;
+  border-radius: 8px;
+}
+
+/* Nav links */
+#nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 10px;
+}
+
+#nav-menu a:hover {
+  color: gold;
+  text-transform: capitalize;
+}
+
+
+
+
+  nav#nav-menu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+  }
+
+.hidden {
+  display: none;
+}
+
+.ayah-display {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 20px 0;
+  direction: rtl;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+
+.translation-display {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+
+.tajweed-noon { color: crimson; font-weight: bold; }
+.tajweed-meem { color: darkgreen; font-weight: bold; }
+.tajweed-qaf  { color: navy; font-weight: bold; }
+
+
+.controls button {
+  padding: 12px 18px;
+  margin: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #007B83;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #005f65;
+}
+
+.controls select {
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+
+.theme-toggle {
+  padding: 10px 16px;
+  background-color: #444;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: #222;
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #ccc;
+  color: #000;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+
+footer {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.motivational {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inspiration {
+  font-style: italic;
+}

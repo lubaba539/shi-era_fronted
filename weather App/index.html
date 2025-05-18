@@ -1,38 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Weather App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="enter city name"
-            spellcheck="false">
-            <button> <img src="images/" alt=""></button>
-        </div>
-        <div class="weather">
-            <img src="images/" class="weather-icon">
-            <h1 class="temp">22c</h1>
-            <h2 class="city">Addis Ababa</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="images/">
-                </div>
-                <p class="humidity">50%</p>
-                <p>Humidity</p>
-            </div>
-        </div>
-        <div class="col">
-            <img src="images/">
-        </div>
-        <p class="wind">15 km/h </p>
-        <p>Wind speed</p>
+
+  <div class="weather-app">
+    <h1>Weather Checker</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button id="searchBtn">Search</button>
     </div>
-</div>
+
+    <div id="weatherInfo" class="weather-info hidden">
+      <h2 id="cityName"></h2>
+      <p id="temperature"></p>
+      <p id="condition"></p>
+      <p id="humidity"></p>
     </div>
-    <script src="script.js"></script>
+
+    <div id="error" class="error hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qur'an Memorization Tracker</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+
+<nav id="nav-menu" class="hidden">
+  <a href="#home">Home</a>
+  <a href="#quran">Qur'an Memorization</a>
+  <a href="#challenge">Daily Challenge</a>
+  <a href="#progress">Progress</a>
+  <a href="#settings">Settings</a>
+</nav>
+
+
+
+  <section id="home" class="page home-background">
+    <h1>وَلَقَدْ يَسَّرْنَا ٱلْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ</h1>
+    <h2>"And We have certainly made the Qur'an easy for remembrance, so is there anyone who will be mindful?"</h2>
+    <h2>قال رسولُ اللهِ صلَّى اللهُ عليهِ وسلَّمَ:
+        ﴿ خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ ﴾ ـ رواه البخاري</h2>
+  </section>
+
+  
+
+  <section id="quran" class="page hidden">
+    <h2>📖 Qur'an Memorization</h2>
+    <div class="selectors">
+      <select id="surah-select"></select>
+      <select id="ayah-select"></select>
+    </div>
+    <div id="ayah-display" class="ayah-display">Select a Surah and Ayah</div>
+    <div id="translation-display" class="translation-display"></div>
+    <div class="controls">
+      <button id="play-audio">▶️ Play Audio</button>
+      <select id="status-select">
+        <option value="new">🆕 New</option>
+        <option value="reviewing">🔁 Reviewing</option>
+        <option value="memorized">✅ Memorized</option>
+      </select>
+      <button id="save-status">Save Status</button>
+    </div>
+  </section>
+
+  <section id="challenge" class="page hidden">
+    <h2>🌟 Daily Challenge</h2>
+    <div id="challenge-ayah" class="ayah-display">Loading...</div>
+    <div id="challenge-translation" class="translation-display"></div>
+    <button onclick="markChallengeMemorized()">✅ I've memorized it!</button>
+    <button onclick="loadDailyChallenge()">⏭️ Regenerate</button>
+  </section>
+
+  <section id="progress" class="page hidden">
+    <h2>📊 Your Progress</h2>
+    <div id="progress-list"></div>
+    <button id="restart-progress">🔁 Restart Progress</button>
+  </section>
+
+  <section id="settings" class="page hidden">
+    <h2>⚙️ Settings</h2>
+    <label>Reciter:
+      <select id="reciter-select">
+        <option value="ar.alafasy" selected>Alafasy</option>
+        <option value="ar.husary">Husary</option>
+        <option value="ar.minshawi">Minshawi</option>
+        <option value="ar.shaatree">Shaatree</option>
+      </select>
+    </label><br />
+    <label>Theme:
+      <select id="theme-select">
+        <option value="light">🌞 Light</option>
+        <option value="dark">🌙 Dark</option>
+      </select>
+    </label><br />
+    <label>Language:
+      <select id="language-select">
+        <option value="en" selected>English</option>
+        <option value="ur">Urdu</option>
+        <option value="id">Indonesian</option>
+      </select>
+    </label>
+  </section>
+
+  <footer>
+    <div id="motivational" class="motivational"></div>
+    <div id="inspiration" class="inspiration"></div>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>
