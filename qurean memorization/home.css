@@ -23,16 +23,24 @@ body.dark-mode {
 }
 
 .home-background {
-  background-image: url('images/image.png');
-  background-size: cover;
+  background-image: url('images/image4.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 83vh;
+  background-size: cover;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
+.home-background h2, h2{
+  color: #fff;
+  font-size: 30px;
+  padding-top: 30px;
 
+}
 
 #quran, #challenge, #progress, #settings {
   max-width: 600px;
@@ -46,6 +54,12 @@ body.dark-mode {
 }
 h2{
   color: #0c0606;
+}
+@media  (max-widt:1080) {
+  .home-background{
+    background-size: contain;
+  }
+  
 }
 .controls{
   color: #121212;
@@ -90,7 +104,7 @@ nav a:hover {
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  margin: 10px 0;
+  margin: -5px 0;
   padding: 10px 16px;
   background-color: #007B83;
   border-radius: 8px;
